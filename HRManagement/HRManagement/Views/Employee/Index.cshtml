@@ -1,0 +1,25 @@
+﻿@model List<HRManagement.Models.Employee>
+
+<h2>Danh sach nhan vien</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Ho ten</th>
+            <th>Email</th>
+            <th>So dien thoai</th>
+            <th>Dia chi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var emp in Model)
+        {
+            <tr>
+                <td>@emp.Name</td>
+                <td>@emp.Email</td>
+                <td>@emp.Phone</td>
+                <td>@emp.Address</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
